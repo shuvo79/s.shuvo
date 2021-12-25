@@ -1,0 +1,59 @@
+@media screen and (max-width: 1200px){
+    .container{
+        max-width: 100%;
+        padding: 0 3rem;
+    }    
+}
+@media screen and (max-width:992px){
+    .about-grid{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .shs{
+        width: 50%;
+    }
+    .process-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-portfolio{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-portfolio-item:nth-child(5){
+        grid-column: 1/2;
+    } 
+}
+@media screen and (max-width:768) {
+    .grid-contact{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:576px) {
+    html{
+        font-size: 55.5%;
+    }
+    .shs{
+        width: 75%;
+    }
+    .process-grid,
+    .grid-experience,
+    .grid-portfolio,
+    .grid-testimonial,
+    .grid-contact
+    {
+        grid-template-columns: 1fr;
+    }
+    #testimonial{
+        background-image: none;
+        background-color: #D1D1D1;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .hero-content span{
+        font-size: 1.9rem;
+    }
+    .section-title h2{
+        font-size: 3;
+    }
+}
